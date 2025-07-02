@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.11.9 on win32)" generated="2025-07-02T22:14:53.751300" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Users\USER\PycharmProjects\robotframework\test_login.robot">
+<test id="s1-t1" name="LoginTest" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-02T22:14:53.973582" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-07-02T22:14:53.973582" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${CHROMEDRIVER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-02T22:14:53.973582" elapsed="2.852474"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-02T22:14:56.826056" elapsed="0.049583"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="user-name"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-02T22:14:56.875639" elapsed="0.065547"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-02T22:14:56.943023" level="INFO">Typing text 'standard_user' into text field 'xpath=//*[@id="user-name"]'.</msg>
+<arg>xpath=//*[@id="user-name"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-02T22:14:56.941186" elapsed="0.236306"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-02T22:14:57.177492" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//*[@id="password"]'.</msg>
+<arg>xpath=//*[@id="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-02T22:14:57.177492" elapsed="0.159437"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-02T22:14:57.339319" level="INFO">Clicking element 'xpath=//*[@id="login-button"]'.</msg>
+<arg>xpath=//*[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-02T22:14:57.336929" elapsed="0.183835"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-02T22:14:59.524351" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-02T22:14:57.520764" elapsed="2.003587"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-02T22:14:59.524351" elapsed="2.194272"/>
+</kw>
+<status status="PASS" start="2025-07-02T22:14:53.957824" elapsed="7.761809"/>
+</test>
+<status status="PASS" start="2025-07-02T22:14:53.751300" elapsed="7.969949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="1" fail="0" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-02T22:14:53.973582" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+</errors>
+</robot>
